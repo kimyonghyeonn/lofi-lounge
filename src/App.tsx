@@ -108,20 +108,6 @@ function App() {
               <Timer onClose={closeTimer} />
             </FadeAnimationHidden>
           </div>
-
-          <div className="flex justify-end items-end tablet:hidden">
-            <ScaleAnimation scaleFactor={1.05}>
-              <OpaqueContainer
-                className="cursor-pointer pb-2 pt-2"
-                onClick={() => window.open(DONATION_URL, '_blank')}
-              >
-                <div className="animate-flicker flex gap-4 items-center">
-                  <IconButton className={'pt-1'} icon={<CoffeeIcon />} />
-                  <p className="text-xs">Buy me a coffee</p>
-                </div>
-              </OpaqueContainer>
-            </ScaleAnimation>
-          </div>
         </div>
 
         <FadeAnimation isVisible={isSceneSelectorOpen}>
